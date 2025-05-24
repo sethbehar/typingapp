@@ -1,21 +1,32 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Hero from './components/Hero';
-import About from './components/About';
 import Gallery from './components/Gallery';
+import About from './components/About';
 import Newsletter from './components/Newsletter';
 import Footer from './components/Footer';
+import ArtworkPage from './ArtworkPage';
 
-function App() {
+export default function App() {
   return (
-    <div id="webcrumbs" className="flex flex-col min-h-screen">
-      <Header />
-      <Hero />
-      <Gallery />
-      <About />
-      <Newsletter />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <>
+              <Header />
+              <Hero />
+              <Gallery />
+              <About />
+              <Newsletter />
+              <Footer />
+            </>
+          }
+        />
+        <Route path="/artwork/:id" element={<ArtworkPage />} />
+      </Routes>
+    </Router>
   );
 }
-
-export default App;

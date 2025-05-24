@@ -6,7 +6,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <div className="md:w-1/2">
             <img
-              src="/about.png"
+              src="/about.jpeg"
               alt="Felipe Tenorio in his studio"
               className="w-full h-auto rounded-lg shadow-md"
             />

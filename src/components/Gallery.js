@@ -2,6 +2,7 @@ import GalleryItem from './GalleryItem';
 
 const items = [
   {
+    id: 1,
     src: '/placeholder_1.jpg',
     alt: 'Abstract painting',
     title: 'Sprial of Color',
@@ -9,6 +10,7 @@ const items = [
     price: "2000",
   },
   {
+    id: 2,
     src: '/placeholder_2.jpg',
     alt: 'Portrait painting',
     title: 'Euphoria girl',
@@ -16,6 +18,7 @@ const items = [
     price: "2000",
   },
   {
+    id: 3,
     src: '/placeholder_3.jpg',
     alt: 'Garlic',
     title: 'Garlic',
@@ -23,6 +26,7 @@ const items = [
     price: "2000",
   },
   {
+    id: 4,
     src: '/placeholder_4.jpg',
     alt: 'More Eurphoria girl',
     title: 'More Eurphoria girl',
@@ -30,6 +34,7 @@ const items = [
     price: "2000",
   },
   {
+    id: 5,
     src: '/placeholder_5.jpg',
     alt: 'Monroe',
     title: 'Monroe Lady',
@@ -47,14 +52,6 @@ export default function Gallery() {
             <GalleryItem key={idx} {...item} />
           ))}
         </div>
-        {/* <div className="mt-8 text-center">
-          <a
-            href="/"
-            className="inline-block border-2 border-gray-800 hover:bg-gray-800 hover:text-white transition-colors duration-300 rounded-full px-8 py-3 uppercase tracking-wider"
-          >
-            View All Works
-          </a>
-        </div> */}
       </div>
     </section>
   );
