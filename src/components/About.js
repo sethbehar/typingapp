@@ -6,7 +6,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <div className="md:w-1/2">
             <img
-              src="https://images.unsplash.com/photo-1516726817505-f5ed825624d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+              src="/about.png"
               alt="Felipe Tenorio in his studio"
               className="w-full h-auto rounded-lg shadow-md"
             />
@@ -16,7 +16,7 @@ export default function About() {
               Brooke is a broke artist from Weston, Florida.
             </p>
             <p className="text-gray-700 mb-4 leading-relaxed">
-              She has no direction in life.
+              She is figuring out life.
             </p>
             <p className="text-gray-700 mb-6 leading-relaxed">
               Her brother motivates her to paint because she needs to lock in.
